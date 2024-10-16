@@ -41,14 +41,39 @@ function roll_dice(qty, sides) {
 //Dice time is over :(((
 //Anyways cricle time???
 function area_circle(radius) {
-    let area = Math.PI*(radius**2);
-    return area;
+    let a = Math.PI*(radius**2);
+    return a;
 }
 
 //And cylinder ig
 function volume_cylinder(radius, height) {
     area_circle(radius);
     let area = Math.PI*(radius**2);
-    let volume = area*height;
+    let volume = Math.round(area*height);
     return volume;
 }
+
+//Extra practice time!!
+//Here's the percentage,
+function percent(score, total) {
+    let p_dec = (score/total)*100;
+    let p_rnd = Math.round(p_dec);
+    console.log(`${p_rnd}%`);
+    return p_dec;
+}
+
+//And hey howdy it's our buddy Pythagoreas!
+function pythagorean_theorum(a, b) {
+    let hypo_sqr = (a**2 + b**2);
+    let hypo = Math.sqrt(hypo_sqr);
+    return hypo;
+}
+
+//Rounding... Ugh >:(
+//Literally hate decimals and fractions
+function round(value, decimals) {
+    let deci_rnd = (value* 10**decimals);
+    deci_rnd = Math.round(deci_rnd) / 10**decimals
+    return deci_rnd;
+}
+//There we go, that was a trip
